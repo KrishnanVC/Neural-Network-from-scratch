@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/darkLight.css' %}">
+    <title>DarkLight</title>
+</head>
+<body>
+    <div class="color">Math or Magic?</div>
+    <div class="input-area">
+        <div class="input-container">
+            <label for="red">Red</label>
+            <input type="range" min="1" max="255" value="50" class="slider" id="red">
+        </div>
+
+        <div class="input-container">
+            <label for="red">Green</label>
+            <input type="range" min="1" max="255" value="50" class="slider" id="green">
+        </div>
+        
+        <div class="input-container">
+            <label for="red">Blue</label>
+            <input type="range" min="1" max="255" value="50" class="slider" id="blue">
+        </div>
+                
+    </div>
+    
+    <script src="{%static '/darkLight.js' %}"></script>
+</body>
+</html>
